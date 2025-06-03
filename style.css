@@ -149,6 +149,7 @@ footer {
   padding: 0;
   font-size: 2rem;
   cursor: pointer;
+  background-color: #FF0000;
 }
 
 div#colormode {
@@ -193,6 +194,7 @@ div#colormode {
   color: var(--light-red);
   border: none;
   transition: 0.3s ease;
+  text-align: center;
 }
 
 body.dark .btn {
