@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --light-red: #FFDFDF;
+  --lighter-red: #FFAFAF;
+  --darker-red: #900000;
+  --dark-red: #600000;
+  --blacky-red: #300000;
+}
+
+
+.page-title {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.chapter-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.head-foot-maintext {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.chapter-subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.link {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--dark-red);
+}
+
+body.dark .link {
+  color: var(--light-red);
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.footer-text {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 800px) {
+  .page-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .chapter-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .head-foot-maintext {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .chapter-subtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .link {
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .text {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+  }
+}
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-red);
+  transition: background-color 0.3s ease;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body.dark {
+  background-color: var(--blacky-red);
+}
+
+
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  background-color: var(--dark-red);
+  color: var(--light-red);
+  padding: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  background-color: var(--dark-red);
+  color: var(--light-red);
+  padding: 1rem;
+}
+
+
+
+#header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+}
+
+#logo-text {
+  margin-left: 1rem;
+}
+
+#btn-colormode {
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+div#colormode {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+
+
+
+
+#footer-info-upper {
+  display: flex;
+  flex-direction: row;
+}
+
+.link.footer {
+  color: var(--light-red);
+}
+
+#footer-info-lower {
+  display: flex;
+  height: 100px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 75%;
+}
+
+#footer-info-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+
+
+
+
+.btn {
+  background-color: var(--darker-red);
+  color: var(--light-red);
+  border: none;
+  transition: 0.3s ease;
+}
+
+body.dark .btn {
+  background-color: var(--darker-red);
+  color: var(--dark-red);
+}
+
+
+.btn.mode {
+  background-color: var(--darker-red);
+  color: var(--light-red);
+}
+
+body.dark .btn.mode {
+  background-color: var(--lighter-red);
+  color: var(--dark-red);
+}
+
+
+
+
+
+
+
+
+
+/* CSS atribūti priekš mobilām ierīcēm */
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+  
+  #header-logo {
+    flex-direction: column;
+    
+  }
+
+  #logo-text {
+    margin-left: 0;
+  }
+  
+  #header-buttons {
+    width: 0;
+  }
+  
+  #btn-colormode {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  #footer-info-upper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer-info-details {
+    align-content: center;
+    text-align: center;
+    height: 200px;
+    margin-left: 0;
+  }
+}
+
+
+/* CSS atribūti priekš lielākām mobilām ierīcēm */
+@media screen and (max-width: 1024px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+div#content {
+  margin-bottom: 5vh;
+}
+
+div#hero-image {
+  height: 100vh;
+  padding: 0 10vw 0 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("./images/Dators_uz_galda.jpg");
+  background-position-x: 60%;
+  background-position-y: 25%;
+  color: var(--light-red);
+}
+
+div#chapters {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  div#chapters {
+    width: 98vw;
+  }
+
+  div#hero-image {
+    background-position-x: 45%;
+    background-position-y: 20%;
+  }
+}
+
+
+
+.chapter {
+  background-color: var(--lighter-red);
+  color: var(--dark-red);
+  transition: 0.3s ease;
+  padding: 1vh 1vw 1vh 1vw;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+
+body.dark .chapter {
+  background-color: var(--darker-red);
+  color: var(--light-red);
+}
+
+.chapter-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.textarea {
+  margin-top: 1rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+body.dark .chapter-text .textarea {
+  color: var(--light-red);
+}
+
+.chapter img {
+  width: 400px;
+  height: auto;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .chapter {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .chapter-text {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .chapter img {
+    width: 100%;
+  }
+}
+
