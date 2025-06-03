@@ -269,7 +269,7 @@ body.dark .btn.mode {
 }
 
 div#content {
-  margin-bottom: 5vh;
+  margin-bottom: 10rem;
 }
 
 div#hero-image {
@@ -315,7 +315,7 @@ div#chapters {
 
   display: flex;
   flex-direction: row;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
 body.dark .chapter {
